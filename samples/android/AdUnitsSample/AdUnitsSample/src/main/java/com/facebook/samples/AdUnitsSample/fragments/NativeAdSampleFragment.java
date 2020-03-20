@@ -88,7 +88,7 @@ public class NativeAdSampleFragment extends Fragment implements NativeAdListener
 
                 // Create a native ad request with a unique placement ID (generate your own on the
                 // Facebook app settings). Use different ID for each ad placement in your app.
-                nativeAd = new NativeAd(getActivity(), "YOUR_PLACEMENT_ID");
+                nativeAd = new NativeAd(getActivity(), "CAROUSEL_IMG_SQUARE_APP_INSTALL#YOUR_PLACEMENT_ID");
 
                 // Set a listener to get notified when the ad was loaded.
                 nativeAd.setAdListener(NativeAdSampleFragment.this);
@@ -213,8 +213,8 @@ public class NativeAdSampleFragment extends Fragment implements NativeAdListener
 
         // You can use the following to specify the clickable areas.
         List<View> clickableViews = new ArrayList<>();
-        clickableViews.add(nativeAdIcon);
-        clickableViews.add(nativeAdMedia);
+//        clickableViews.add(nativeAdIcon);
+//        clickableViews.add(nativeAdMedia);
         clickableViews.add(nativeAdCallToAction);
         nativeAd.registerViewForInteraction(
                 nativeAdLayout,
